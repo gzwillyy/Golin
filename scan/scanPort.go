@@ -74,6 +74,7 @@ func IsPortOpen(host, port string) {
 	if err != nil {
 		return
 	}
+	defer conn.Close()
 	Protocol := parseProtocol(conn, host, port, Poc) //识别协议
 	thisINFO := INFO{host, port, Protocol}
 	outputMux.Lock()

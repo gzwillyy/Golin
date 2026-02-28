@@ -229,7 +229,11 @@ func CheckApp(body string, head map[string][]string, cookies []*http.Cookie, ser
 			}
 
 		case "icohash":
-			if strings.EqualFold(rule.Rule, icohash) {
+			matched, err := regexp.MatchString(rule.Rule, icohash)
+			if err != nil {
+				break
+			}
+			if matched {
 				app = append(app, rule.Name)
 				global.AppMatchedRules[rule.Name]++
 			}

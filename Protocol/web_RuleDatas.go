@@ -62,7 +62,7 @@ var RuleDatas = []RuleData{
 	{"Django", "body", "(DisallowedHost|django.template|django/core/handlers/exception.py)"},
 	{"Grafana", "body", "(Grafana)"},
 	{"深信服-上网行为管理系统", "body", "(Internet Authentication System|<title>上网认证系统</title>)"},
-	{"深信服-防火墙", "body", "(function\\(str, key\\)|LogInOut.php)"},
+	{"深信服-防火墙", "body", "(function\\(str, key\\)|LogInOut.php|loginout.php)"},
 	{"任子行-防火墙", "body", "(任子行下一代防火墙)"},
 	{"NPS内网穿透", "body", "(ehang.io/nps|<title>nps error</title>)"},
 	{"华为路由器", "body", "(/css/cat_public.css.cgz|/api/system/routerstatus)"},
@@ -595,4 +595,6 @@ var RuleDatas = []RuleData{
 	{"九思OA", "body", "location.href.*?/jsoa/login.jsp"},
 	{"linglong", "body", "/css/app.3d466215.css"},
 	{"ApacheFlinkDashboard", "body", "<title>Apache Flink Web Dashboard</title>"},
+	{"天融信", "icohash", "1ec31972ec65a65470d3b5d790c1f401"},
+	{"青龙面板", "icohash", "(cbac8d7b2741338c959be28d032593b0|4f16f0ca1a3ec23078bd9eac624c5ad3|94cd18160e1a771c7ba9d37bb984cb66|66208df4ed43a7ab0ae367181d9a4ef7|44e9361d20c61f44d4f6556c41279768|6936ddb77c9e5ac4760de3b3a586b799)"},
 }
